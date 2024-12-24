@@ -37,7 +37,7 @@ section{
     width: 100%;
 }
 
-section:nth-child(odd){
+section:nth-child(even){
     background-color: #f5f8fc;;
 }
 
