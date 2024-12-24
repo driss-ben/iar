@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAR</title>
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="loading-layer" id="loading-layer">
+        <div class="loading-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    </div>
+    <div id="black-layer" onclick="toggleFlexMenu()">
+
+    </div>
+    <div class="header on-top" id="header-container">
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="logo-black.png">
+            </div>
+            <ul>
+                <li>
+                    <a onclick="smoothScrollToSection('about-us');">À Propos</a>
+                </li>
+                <li>
+                    <a onclick="smoothScrollToSection('our-services');">Nos services</a>
+                </li>
+                <li>
+                    <a onclick="smoothScrollToSection('contact-us');">Nous contacter</a>
+                </li>
+            </ul>
+            <div id="humberg-button" onclick="toggleFlexMenu()"></div>
+        </div>
+        <div class="flex-menu" id="flex-menu">
+            <div class="link-container">
+                <a onclick="smoothScrollToSection('about-us');">À Propos</a>
+            </div>
+            <div class="link-container">
+                <a onclick="smoothScrollToSection('our-services');">Nos services</a>
+            </div>
+            <div class="link-container">
+                <a onclick="smoothScrollToSection('contact-us');">Nous contacter</a>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <div class="stack">
+            <div class="background"></div>
+            <div class="content-container">
+                <div class="content">
+                    <img src="logo.png">
+                    <p>
+                        <span id="typing-description"></span>
+                        <span id="cursor">_</span>
+                    </p>
+                </div>
+                <div class="trapeze-container">
+                    <div class="trapeze-form"></div>
+                    <div class="trapeze-button" onclick="smoothScrollToSection('about-us');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="about-us">
+        <div class="section-title-container">
+            <h1>À Propos De Nous</h1>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <span class="subtitle">
+                    Nous sommes Votre Partenaire pour les Solutions IT
+                </span>
+                <p class="justify-text medium-text">
+                    Chez IAR, nous ne sommes pas simplement une entreprise de services informatiques, 
+                    nous sommes votre allié pour le développement, la maintenance
+                    et la sécurisation de vos applications.
+                </p>
+                <p class="justify-text medium-text">
+                    Qu'il s'agisse d'améliorer vos logiciels existants, de résoudre des problèmes 
+                    complexes ou de renforcer la sécurité de vos systèmes, IAR est là pour accompagner 
+                    vos projets dans le domaine IT.
+                </p>
+                <div class="imgs-row-container pt-1">
+                    <img class="one-per-row" src="about-0.png">
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="imgs-row-container pb-1">
+                    <img class="two-per-row" src="about-1.jpg">
+                    <img class="two-per-row" src="about-2.jpg">
+                </div>
+                <p class="justify-text medium-text">
+                    Nos valeurs fondamentales sont au cœur de notre engagement : une écoute attentive pour comprendre vos besoins, un accompagnement personnalisé à chaque étape de votre projet, une accessibilité pour tous, et une réactivité exemplaire.
+                </p>
+                <p class="justify-text medium-text">
+                    Notre équipe est dédiée à analyser vos défis, à développer des solutions sur mesure et à offrir des résultats concrets rapidement. Nous croyons fermement que chaque client mérite une solution IT parfaitement adaptée à ses enjeux spécifiques, et notre quête d'excellence guide chacune de nos interventions.
+                </p>
+            </div>
+        </div>  
+    </section>
+    <section class="container" id="our-services">
+        <div class="section-title-container">
+            <h1>Nos Prestations De Service</h1>
+        </div>
+        <div class="row">
+            <div class="col-3 service-card">
+                <span class="number-text golden-text bolder-text">
+                    01
+                </span>
+                <p class="large-text">
+                    Développement
+                </p>
+                <div class="service-img-container">
+                    <img src="dev.jpg">
+                </div>
+                <p class="justify-text medium-text">
+                    Que ce soit pour un site web, une application mobile ou un logiciel desktop, nous concevons des solutions sur mesure en utilisant les technologies les plus récentes pour une expérience utilisateur optimale.
+                </p>
+                <div class="bottom-right-position">
+                    <button class="black-button">
+                        <span class="small-text">
+                            En savoir plus
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3 service-card">
+                <span class="number-text golden-text bolder-text">
+                    02
+                </span>
+                <p class="large-text">
+                    Maintenance et Sécurité
+                </p>
+                <div class="service-img-container">
+                    <img src="cybersecurite-ordinateur.jpg">
+                </div>
+                <p class="justify-text medium-text">
+                    Chez IAR, nous assurons la maintenance proactive de vos applications pour garantir leur performance et leur continuité. Nous sécurisons également vos données et systèmes avec des audits réguliers et des solutions de protection efficaces.
+                </p>
+                <div class="bottom-right-position">
+                    <button class="black-button">
+                        <span class="small-text">
+                            En savoir plus
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3 service-card">
+                <span class="number-text golden-text bolder-text">
+                    03
+                </span>
+                <p class="large-text">
+                    Autres Services IT
+                </p>
+                <div class="service-img-container">
+                    <img src="it-services.jpg">
+                </div>
+                <p class="justify-text medium-text">
+                    Besoin d’un accompagnement IT spécifique ? Que ce soit pour une migration de données, une optimisation des performances ou la résolution des problèmes techniques, notre équipe est là pour relever vos défis.
+                </p>
+                <div class="bottom-right-position">
+                    <button class="black-button">
+                        <span class="small-text">
+                            En savoir plus
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="golden-line">
+            <div class="blur-lyer"></div>
+        </div>
+        <div class="questions-answers-container">
+            <div class="question-answer-container">
+                <div class="question-container" onclick="toggleResponse(0)">
+                    <div class="question">
+                        <p>Pourquoi avoir un site pour son entreprise ?</p>
+                    </div>
+                    <div class="to-answer" id="reply-0"></div>
+                </div>
+                <div class="answer-container" id="answer-0">
+                    <p class="medium-text justify-text">
+                        Le saviez-vous ? 53 % des consommateurs déclarent effectuer systématiquement des recherches
+                        en ligne avant d'acheter un bien ou un service (Google/Ipsos). <br>
+                        Voici d'autres avantages :
+                    </p>
+                    <ul class="advantages">
+                        <li>
+                            <p class="medium-text">
+                                Augmenter la visibilité de vos activités
+                            </p>
+                        </li>
+                        <li>
+                            <p class="medium-text">
+                                S'adapter au comportement des consommateurs
+                            </p>
+                        </li>
+                        <li>
+                            <p class="medium-text">
+                                Réduire les coûts publicitaires
+                            </p>
+                        </li>
+                        <li>
+                            <p class="medium-text">
+                                Renforcer la crédibilité de votre entreprise
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-answer-container">
+                <div class="question-container" onclick="toggleResponse(1)">
+                    <div class="question">
+                        <p>Pourquoi sécuriser son système informatique ?</p>
+                    </div>
+                    <div class="to-answer" id="reply-1"></div>
+                </div>
+                <div class="answer-container" id="answer-1">
+                    <p class="medium-text justify-text">
+                        Jusqu'à 60 % des cyberattaques sont liées à des configurations de systèmes mal sécurisés.
+                        <br>
+                        En effet, bien sécuriser son système informatique permet de :
+                    </p>
+                    <ul class="advantages">
+                        <li>
+                            <p class="medium-text">Prévenir les cyberattaques et le vol de données (informations personnelles, coordonnées bancaires, etc.)</p>        
+                        </li>
+                        <li>
+                            <p class="medium-text">Respecter la conformité légale et éviter des amendes importantes</p>
+                        </li>
+                        <li>
+                            <p class="medium-text">Gagner la confiance des clients</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-answer-container">
+                <div class="question-container" onclick="toggleResponse(2)">
+                    <div class="question">
+                        <p>Pourquoi IAR ?</p>
+                    </div>
+                    <div class="to-answer" id="reply-2"></div>
+                </div>
+                <div class="answer-container" id="answer-2">
+                    <ul class="advantages">
+                        <li>
+                            <p class="medium-text justify-text">
+                                Accompagnement personnalisé tout au long de votre projet, avec un contact direct
+                                entre vous et le développeur pour répondre précisément à vos attentes
+                            </p>
+                        </li>
+                        <li>
+                            <p class="medium-text">
+                                Équipe dirigée par un ingénieur informatique qualifié, spécialisé dans le développement
+                                et la sécurité logicielle
+                            </p>  
+                        </li>
+                        <li>
+                            <p class="medium-text">
+                                Nos services sont garantis : satisfait ou remboursé.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="section-title-container">
+            <h1>Les avis de nos clients</h1>
+        </div>
+        <div class="testimonial swiperReviews">
+            <div class="testi-content swiper-wrapper">
+              <div class="slide swiper-slide">
+                <img src="img2.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+    
+                <i class="bx bxs-quote-alt-left quote-icon golden-text"></i>
+    
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web lol</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="img.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+    
+                <i class="bx bxs-quote-alt-left quote-icon golden-text"></i>
+    
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="img1.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+    
+                <i class="bx bxs-quote-alt-left quote-icon golden-text"></i>
+    
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="our-clients">
+            <div class="start-gradient"></div>
+            <div class="end-gradient"></div>
+            <ul class="logo-slider">
+                <li>
+                    <img class="client-logo" src="logos/meta.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/microsoft.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/octo.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/oracle.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/paypal.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/rakuten.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/meta.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/microsoft.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/octo.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/oracle.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/paypal.png">
+                </li>
+                <li>
+                    <img class="client-logo" src="logos/rakuten.png">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-black-layer"></div>
+		<div class="footer-content">
+			<div class="contact-info-container">
+				<div class="contact-infos">
+					<div class="contact-element">
+						<div class="contact-icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="contact-info">
+							<div class="contact-label">
+								Télephone
+							</div>
+							<div class="contact">
+								0656466370
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-infos">
+					<div class="contact-element">
+						<div class="contact-icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="contact-info">
+							<div class="contact-label">
+								Adresse
+							</div>
+							<div class="contact">
+								0656466370
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-infos">
+					<div class="contact-element">
+						<div class="contact-icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="contact-info">
+							<div class="contact-label">
+								Email
+							</div>
+							<div class="contact">
+								driss.benkhaldoun@gmail.com
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-infos">
+					<div class="contact-element">
+						<div class="contact-icon">
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<div class="contact-info">
+							<div class="contact-label">
+								Suivez Nous !
+							</div>
+							<div class="contact">
+								<div class="social-medias-container">
+									<i class="fa-brands fa-facebook"></i>
+									<i class="fa-brands fa-twitter"></i>
+									<i class="fa-brands fa-instagram"></i>
+									<i class="fa-brands fa-youtube"></i>
+									<i class="fa-brands fa-linkedin"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contact-form-container" id="contact-us">
+                <h2>Laissez nous un message</h2>
+			    <div class="contact-form">
+			        <div class="form-row">
+			            <div class="form-group">
+			                <input class="form-control" type="text" id="name" name="name" placeholder="Nom">
+			            </div>
+			            <div class="form-group">
+			                <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+			        </div>
+			        <div class="submit-container"><button>Envoyer</button></div>
+			    </div>
+			</div>
+		</div>
+		<div class="golden-line unblacked-layer"></div>
+        <p class="small-text unblacked-layer" id="copyright-container">IAR website Developed By Driss, All rights reserved</p>
+	</footer>
+    <script>
+        document.getElementById('copyright-container').innerHTML = `&copy; ${new Date().getFullYear()} copyrights, IAR website. All rights reserved`;
+      </script>
+	<script src="https://kit.fontawesome.com/d3a16acf7f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
