@@ -1049,6 +1049,7 @@ textarea::-webkit-scrollbar-thumb {
     z-index: 50;
     background-color: black;
     cursor: pointer;
+    border: solid 1px white;
 }
 
 .chatbot-start-button img{
