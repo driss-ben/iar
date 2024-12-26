@@ -10,12 +10,16 @@
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/style-chatbot.css"/>
 </head>
 <body>
+    <div class="chatbot-start-button" onclick="openChatBot();">
+        <img src="assets/images/icons/robot.png">
+    </div>
     <div class="loading-layer" id="loading-layer">
         <div class="loading-container">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="assets/images/logos/logo.png" alt="Logo" class="logo">
         <div class="circles">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -29,7 +33,7 @@
     <div class="header on-top" id="header-container">
         <div class="navbar">
             <div class="logo-container">
-                <img src="logo-black.png">
+                <img src="assets/images/logos/logo-black.png">
             </div>
             <ul>
                 <li>
@@ -61,7 +65,7 @@
             <div class="background"></div>
             <div class="content-container">
                 <div class="content">
-                    <img src="logo.png">
+                    <img src="assets/images/logos/logo.png">
                     <p>
                         <span id="typing-description"></span>
                         <span id="cursor">_</span>
@@ -81,7 +85,7 @@
         <div class="row">
             <div class="col-5">
                 <span class="subtitle">
-                    Nous sommes Votre Partenaire pour les Solutions IT
+                    IAR Votre Partenaire pour les Solutions IT
                 </span>
                 <p class="justify-text medium-text">
                     Chez IAR, nous ne sommes pas simplement une entreprise de services informatiques, 
@@ -94,13 +98,13 @@
                     vos projets dans le domaine IT.
                 </p>
                 <div class="imgs-row-container pt-1">
-                    <img class="one-per-row" src="about-0.png">
+                    <img class="one-per-row" src="assets/images/about-0.png">
                 </div>
             </div>
             <div class="col-5">
                 <div class="imgs-row-container pb-1">
-                    <img class="two-per-row" src="about-1.jpg">
-                    <img class="two-per-row" src="about-2.jpg">
+                    <img class="two-per-row" src="assets/images/about-1.jpg">
+                    <img class="two-per-row" src="assets/images/about-2.jpg">
                 </div>
                 <p class="justify-text medium-text">
                     Nos valeurs fondamentales sont au cœur de notre engagement : une écoute attentive pour comprendre vos besoins, un accompagnement personnalisé à chaque étape de votre projet, une accessibilité pour tous, et une réactivité exemplaire.
@@ -124,13 +128,13 @@
                     Développement
                 </p>
                 <div class="service-img-container">
-                    <img src="dev.jpg">
+                    <img src="assets/images/dev.jpg">
                 </div>
                 <p class="justify-text medium-text">
                     Que ce soit pour un site web, une application mobile ou un logiciel desktop, nous concevons des solutions sur mesure en utilisant les technologies les plus récentes pour une expérience utilisateur optimale.
                 </p>
                 <div class="bottom-right-position">
-                    <button class="black-button">
+                    <button class="black-button" onclick="openChatBot();">
                         <span class="small-text">
                             En savoir plus
                         </span>
@@ -145,13 +149,13 @@
                     Maintenance et Sécurité
                 </p>
                 <div class="service-img-container">
-                    <img src="cybersecurite-ordinateur.jpg">
+                    <img src="assets/images/cybersecurite-ordinateur.jpg">
                 </div>
                 <p class="justify-text medium-text">
                     Chez IAR, nous assurons la maintenance proactive de vos applications pour garantir leur performance et leur continuité. Nous sécurisons également vos données et systèmes avec des audits réguliers et des solutions de protection efficaces.
                 </p>
                 <div class="bottom-right-position">
-                    <button class="black-button">
+                    <button class="black-button" onclick="openChatBot();">
                         <span class="small-text">
                             En savoir plus
                         </span>
@@ -166,13 +170,13 @@
                     Autres Services IT
                 </p>
                 <div class="service-img-container">
-                    <img src="it-services.jpg">
+                    <img src="assets/images/it-services.jpg">
                 </div>
                 <p class="justify-text medium-text">
                     Besoin d’un accompagnement IT spécifique ? Que ce soit pour une migration de données, une optimisation des performances ou la résolution des problèmes techniques, notre équipe est là pour relever vos défis.
                 </p>
                 <div class="bottom-right-position">
-                    <button class="black-button">
+                    <button class="black-button" onclick="openChatBot();">
                         <span class="small-text">
                             En savoir plus
                         </span>
@@ -285,7 +289,7 @@
         <div class="testimonial swiperReviews">
             <div class="testi-content swiper-wrapper">
               <div class="slide swiper-slide">
-                <img src="img2.jpg" alt="" class="image" />
+                <img src="assets/images/img2.jpg" alt="" class="image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
                   saepe provident dolorem a quaerat quo error facere nihil deleniti
@@ -301,7 +305,7 @@
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="img.jpg" alt="" class="image" />
+                <img src="assets/images/img.jpg" alt="" class="image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
                   saepe provident dolorem a quaerat quo error facere nihil deleniti
@@ -317,7 +321,7 @@
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="img1.jpg" alt="" class="image" />
+                <img src="assets/images/img1.jpg" alt="" class="image" />
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
                   saepe provident dolorem a quaerat quo error facere nihil deleniti
@@ -343,44 +347,58 @@
             <div class="end-gradient"></div>
             <ul class="logo-slider">
                 <li>
-                    <img class="client-logo" src="logos/meta.png">
+                    <img class="client-logo" src="assets/images/logos/meta.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/microsoft.png">
+                    <img class="client-logo" src="assets/images/logos/microsoft.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/octo.png">
+                    <img class="client-logo" src="assets/images/logos/octo.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/oracle.png">
+                    <img class="client-logo" src="assets/images/logos/oracle.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/paypal.png">
+                    <img class="client-logo" src="assets/images/logos/paypal.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/rakuten.png">
+                    <img class="client-logo" src="assets/images/logos/rakuten.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/meta.png">
+                    <img class="client-logo" src="assets/images/logos/meta.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/microsoft.png">
+                    <img class="client-logo" src="assets/images/logos/microsoft.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/octo.png">
+                    <img class="client-logo" src="assets/images/logos/octo.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/oracle.png">
+                    <img class="client-logo" src="assets/images/logos/oracle.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/paypal.png">
+                    <img class="client-logo" src="assets/images/logos/paypal.png">
                 </li>
                 <li>
-                    <img class="client-logo" src="logos/rakuten.png">
+                    <img class="client-logo" src="assets/images/logos/rakuten.png">
                 </li>
             </ul>
         </div>
     </section>
+    <div class="chatbot" id="chatbot">
+        <div id="chat-header">
+            <h3>Chatbot</h3>
+            <div>
+                <button id="reset-button"><i class="fa-solid fa-rotate-right"></i></button>
+                <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div id="chat-body">
+        </div>
+        <div id="chat-footer">
+            <p>Powred by IAR</p>
+        </div>
+    </div>
     <footer>
         <div class="footer-black-layer"></div>
 		<div class="footer-content">
@@ -475,9 +493,10 @@
 	</footer>
     <script>
         document.getElementById('copyright-container').innerHTML = `&copy; ${new Date().getFullYear()} copyrights, IAR website. All rights reserved`;
-      </script>
+    </script>
 	<script src="https://kit.fontawesome.com/d3a16acf7f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/chatbot-engine.js"></script>
 </body>
 </html>
