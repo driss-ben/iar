@@ -98,6 +98,7 @@ function hideContainerWithOpacity(divId) {
     requestAnimationFrame(updateOpacity);
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', async function() {
+    await sleep(300)
     hideContainerWithOpacity('loading-layer');
 });

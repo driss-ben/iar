@@ -998,11 +998,6 @@ textarea::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
-.logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
 .circles {
     display: flex;
     justify-content: center;
