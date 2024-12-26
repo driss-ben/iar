@@ -6,7 +6,7 @@ const writeLoop=async()=>{
     while(true){                
         for(let i=0; i<phrase.length;i++){
             tw.innerHTML=phrase.substring(0,i+1);
-            await sleep(70);
+            await sleep(50);
         }
         await sleep(sleepTime);
         
@@ -99,6 +99,6 @@ function hideContainerWithOpacity(divId) {
   }
 
   document.addEventListener('DOMContentLoaded', async function() {
-    await sleep(300)
+    await sleep(300);
     hideContainerWithOpacity('loading-layer');
 });
