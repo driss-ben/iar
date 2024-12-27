@@ -942,6 +942,16 @@ textarea::-webkit-scrollbar-thumb {
     #about-us .col-5{
         width: 85%;
     }
+
+    footer{
+        background: url(../images/footer-mobile.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .main .stack .background{
+        background: url(../images/header-mobile.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 400px){
@@ -1037,8 +1047,8 @@ textarea::-webkit-scrollbar-thumb {
 /* end loading layer */
 
 .chatbot-start-button{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50px;
     position: fixed;
     bottom: 20px;
@@ -1049,10 +1059,9 @@ textarea::-webkit-scrollbar-thumb {
     z-index: 50;
     background-color: black;
     cursor: pointer;
-    border: solid 1px white;
 }
 
 .chatbot-start-button img{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
