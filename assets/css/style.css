@@ -980,9 +980,9 @@ textarea::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 370px){
     .question-container p{
-        font-size: 11px;
+        font-size: 11px !important;
     }
 
     .answer-container *{
