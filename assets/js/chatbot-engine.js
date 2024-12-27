@@ -38,7 +38,7 @@ function startChat() {
         `;
         chatBody.appendChild(botMessage);
         chatBody.scrollTop = chatBody.scrollHeight;
-    }, 1000);
+    }, 700);
 }
 
 function selectService(service, containerId) {
@@ -70,7 +70,7 @@ function selectService(service, containerId) {
         } else if (service === "Autres services IT") {
             askOtherITDetails();
         }
-    }, 1000);
+    }, 700);
 }
 
 function askDevelopmentType() {
@@ -117,7 +117,7 @@ function selectDevelopmentType(type, containerId) {
         } else {
             askCommonDevelopmentQuestions();
         }
-    }, 1000);
+    }, 700);
 }
 
 function askWebsiteDetails() {
@@ -162,7 +162,7 @@ function selectWebsiteType(type, containerId) {
         typingIndicator.remove();
 
         askCommonDevelopmentQuestions();
-    }, 1000);
+    }, 700);
 }
 
 function askCommonDevelopmentQuestions() {
@@ -205,7 +205,7 @@ function saveAnswer(answer, containerId) {
     setTimeout(() => {
         typingIndicator.remove();
         askContactInfos(); // Final question to collect the contact for this service
-    }, 1000);
+    }, 700);
 }
 
 function createTypingIndicator(chatBody) {
@@ -260,7 +260,7 @@ function selectMaintenanceDetail(detail, containerId) {
         typingIndicator.remove();
 
         askCommonMaintenanceQuestions();
-    }, 1000);
+    }, 700);
 }
 
 function askCommonMaintenanceQuestions() {
@@ -320,7 +320,7 @@ function selectOtherITDetail(detail, containerId) {
         typingIndicator.remove();
 
         askContactInfos(); // Final question to collect the contact for this service
-    }, 1000);
+    }, 700);
 }
 
 function askContactInfos() {
@@ -417,7 +417,7 @@ function processContactInfo(contact, successMessage) {
         chatBody.appendChild(botMessage);
 
         chatBody.scrollTop = chatBody.scrollHeight;
-    }, 1000);
+    }, 700);
 }
 
 function validateEmail(email) {
