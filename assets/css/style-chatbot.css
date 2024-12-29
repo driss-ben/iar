@@ -50,7 +50,7 @@
   
 #chat-body::-webkit-scrollbar-thumb {
     background-color: unset;
-    background-image: linear-gradient(to top, transparent,black, transparent) !important;
+    background-image: linear-gradient(to top, white, black,white) !important;
     border-radius: 0;
 }
   
