@@ -75,8 +75,7 @@ section:nth-child(odd){
 }
 
 .main .stack .content-container .content img{
-    height: 90px;
-    width: 250px;
+    width: 300px;
     align-self: center;
 }
 
@@ -399,12 +398,11 @@ ul.advantages li p{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
 }
 
 .header .navbar .logo-container img{
-    height: 20px;
-    width: 60px;
+    /* height: 20px; */
+    width: 150px;
 }
 
 .header .navbar ul {
