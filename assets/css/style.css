@@ -387,6 +387,7 @@ ul.advantages li p{
     color: black;
     padding: 7px 12px;
     transition: 0.5s;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5); /* Bottom shadow */
 }
 
 .header.on-top .navbar{
