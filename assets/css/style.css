@@ -268,7 +268,7 @@ p.medium-text{
 
 
 .golden-text{
-    background-image: linear-gradient(to right,#97672e, #f4ea9a);
+    background-image: linear-gradient(to bottom right, #0bbed8, #d70dbc);
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -346,8 +346,9 @@ p.medium-text{
 .golden-line{
     width: 30%;
     height: 5px;
-    background: url(../images/gold.gif) no-repeat center center;
-    background-size: cover;
+    /* background: url(../images/gold.gif) no-repeat center center; */
+    background-image: linear-gradient(to right, #0bbed8, #d70dbc);
+    /* background-size: cover; */
     margin-bottom: 20px;
 }
 
@@ -607,7 +608,7 @@ ul.advantages li p{
 }
 
 .swiper-pagination-bullet-active {
-    background: linear-gradient(to bottom,#97672e, #f4ea9a);
+    background: linear-gradient(to bottom right, #0bbed8, #d70dbc);
 }
 
 @media screen and (max-width: 768px) {
@@ -817,14 +818,14 @@ textarea {
     background-color: transparent;
     box-sizing: border-box;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.5s ease;
     padding: 10px;
     font-family: inherit;
 }
 
 .contact-form .form-control:focus{
     border: none;
-    border-bottom: 2px solid darkorange;
+    border-bottom: 2px solid #d70dbc;
 }
 
 .contact-form button{
