@@ -47,7 +47,7 @@ const humberg_button=document.getElementById('humberg-button');
 const flex_menu=document.getElementById('flex-menu');
 const black_layer=document.getElementById('black-layer');
 window.onscroll = function () {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 200) {
         header_container.classList.remove('on-top');
     }
     else{

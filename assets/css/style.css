@@ -249,7 +249,7 @@ p.medium-text{
 
 .number-text{
     font-size: 12px ;
-    font-weight: 900;
+    color: #d70dbc;
 }
 
 .service-card .large-text{
@@ -268,6 +268,13 @@ p.medium-text{
 
 
 .golden-text{
+    background-image: linear-gradient(to right bottom,#97672e, #f4ea9a);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.gradient-text{
     background-image: linear-gradient(to bottom right, #0bbed8, #d70dbc);
     color: transparent;
     -webkit-background-clip: text;
@@ -296,7 +303,7 @@ p.medium-text{
 }
 
 .bolder-text{
-    font-weight: 900 !important;
+    font-weight: 600 !important;
 }
 
 .bottom-right-position{
@@ -387,7 +394,7 @@ ul.advantages li p{
     color: black;
     padding: 7px 12px;
     transition: 0.5s;
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5); /* Bottom shadow */
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.5); /* Bottom shadow */
 }
 
 .header.on-top .navbar{
@@ -609,7 +616,7 @@ ul.advantages li p{
 }
 
 .swiper-pagination-bullet-active {
-    background: linear-gradient(to bottom right, #0bbed8, #d70dbc);
+    background-image: linear-gradient(to right bottom,#97672e, #f4ea9a);
 }
 
 @media screen and (max-width: 768px) {
