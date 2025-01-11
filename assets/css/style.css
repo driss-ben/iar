@@ -353,9 +353,7 @@ p.medium-text{
 .golden-line{
     width: 30%;
     height: 5px;
-    /* background: url(../images/gold.gif) no-repeat center center; */
     background-image: linear-gradient(to right, #0bbed8, #d70dbc);
-    /* background-size: cover; */
     margin-bottom: 20px;
 }
 
@@ -885,6 +883,10 @@ textarea::-webkit-scrollbar-thumb {
     #our-services .col-3{
         width: 55%;
     }
+    .golden-line{
+        width: 40%;
+        height: 5px;
+    }
 }
 
 @media (max-width: 900px){
@@ -916,6 +918,10 @@ textarea::-webkit-scrollbar-thumb {
     .contact-info-container{
         width: 80%;
     }
+    .golden-line{
+        width: 50%;
+        height: 4px;
+    }
 }
 
 @media (max-width: 700px) {  
@@ -930,6 +936,10 @@ textarea::-webkit-scrollbar-thumb {
     }
     #our-services .col-3{
         width: 65%;
+    }
+    .golden-line{
+        width: 55%;
+        height: 4px;
     }
 }
 
@@ -959,6 +969,10 @@ textarea::-webkit-scrollbar-thumb {
         background: url(../images/header-mobile.jpg) no-repeat center center fixed;
         background-size: cover;
     }
+    .golden-line{
+        width: 60%;
+        height: 4px;
+    }
 }
 
 @media (max-width: 400px){
@@ -984,6 +998,10 @@ textarea::-webkit-scrollbar-thumb {
     }
     .form-row{
         flex-direction: column;
+    }
+    .golden-line{
+        width: 70%;
+        height: 3px;
     }
 }
 
