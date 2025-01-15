@@ -133,7 +133,7 @@ section:nth-child(odd){
     background: url(../images/icons/arrow.png) no-repeat center center;
     background-size: cover;
     cursor: pointer;
-    animation: moveAndFade 1.5s forwards infinite;
+    animation: moveAndFade 3s forwards infinite;
 }
 
 .to-answer{
@@ -150,11 +150,14 @@ section:nth-child(odd){
         transform: translateY(0);
         opacity: 0;
     }
-    50% {
+    30% {
+        opacity: 1;
+    }
+    70% {
         opacity: 1;
     }
     100% {
-        transform: translateY(20px);
+        transform: translateY(30px);
         opacity: 0;
     }
 }
