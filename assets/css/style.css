@@ -113,7 +113,7 @@ section:nth-child(odd){
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0;
+    bottom: -5px;
     position: absolute;
 }
 
