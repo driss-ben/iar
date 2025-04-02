@@ -6,18 +6,17 @@ const writeLoop=async()=>{
     while(true){                
         for(let i=0; i<phrase.length;i++){
             tw.innerHTML=phrase.substring(0,i+1);
-            await sleep(50);
+            await sleep(30);
         }
         await sleep(sleepTime);
         
         for(let i=phrase.length-1; i>=0;i--){
             tw.innerHTML=phrase.substring(0,i-1);
-            await sleep(20);
+            await sleep(10);
         }
         await sleep(sleepTime);
     }
 };
-writeLoop();
 
 function sleep(ms){
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -62,6 +61,7 @@ function toggleFlexMenu(){
     humberg_button.classList.toggle("close-menu-button");
     displayedFlexMenu=!displayedFlexMenu;
 }
+
 var swiperReviews = new Swiper(".swiperReviews", {
     slidesPerView: 1,
     grabCursor: true,
@@ -101,4 +101,6 @@ function hideContainerWithOpacity(divId) {
   document.addEventListener('DOMContentLoaded', async function() {
     await sleep(300);
     hideContainerWithOpacity('loading-layer');
+    await sleep(300);
+    writeLoop();
 });
