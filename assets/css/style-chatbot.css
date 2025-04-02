@@ -99,7 +99,11 @@
 }
 
 #chat-footer p {
-    font-size: 12px;
+    font-size: 11px;
+}
+
+#chat-footer a {
+    color: gray;
 }
 
 /* Chat Message Styles */
