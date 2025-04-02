@@ -98,6 +98,10 @@
     background-color: white;
 }
 
+#chat-footer p {
+    font-size: 12px;
+}
+
 /* Chat Message Styles */
 .chat-message {
     margin-bottom: 10px;
